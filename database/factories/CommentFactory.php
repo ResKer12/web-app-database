@@ -19,7 +19,7 @@ class CommentFactory extends Factory
         return [
             //
             'name' => $this->faker->randomElement(['This Comment', 'That Comment', 'Some Comment']),
-            'message' => $this->faker->randomElement(['A Message', 'Some Message', 'Another Post']),
+            'message' => $this->faker->randomElement(['A Message', 'Some Message', 'Another Message']),
             'post_id' => \App\Models\Post::inRandomOrder()->first()->id,
         ];
     }
