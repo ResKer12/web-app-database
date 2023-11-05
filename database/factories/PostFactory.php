@@ -19,6 +19,7 @@ class PostFactory extends Factory
         return [
             //
             'post' => $this->faker->randomElement(['The Post', 'A Post', 'Another Post']),
+            'user_id' => \App\Models\User::inRandomOrder()->first()->id,
         ];
     }
 }
